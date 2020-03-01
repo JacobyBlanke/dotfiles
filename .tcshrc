@@ -1,5 +1,5 @@
 #Terminal Startup
-set wallpaper="`cat /home/jacoby/Wallpaper/pick.txt`"
+set wallpaper="`cat ~/Wallpaper/pick.txt`"
 wal -i $wallpaper #Use PyWal to get terminal theme based on wallpaper
 clear
 fortune | cowsay -f tux | lolcat # Fortune/cowsay with Tux the penguin in RAINBOW as a nice startup message
@@ -13,15 +13,13 @@ set    cyan="%{\033[1;36m%}"
 set   white="%{\033[0;37m%}"
 set     end="%{\033[0m%}"
 
-set prompt = "${white}(${red}%n:%B%/%b${red}:${red}%t${white}) -${cyan} Not Fish:${magenta} ${end}"
+set prompt = "${white}(${red}%n:%B%/%b${red}:${red}%t${white}) -${cyan} TCSH:${magenta} ${end}" //sets the shell prompt 
 
-set path = ( $path /home/jacoby/.local/bin/ /home/jacoby/.githubcli/bin /home/jacoby/OpenCV/opencv/build/java/x64 ) #set path for pip packages and gh
+set path = ( $path ~/.local/bin/ ) #update path
 
-bindkey -v #VIM VIM EVERYWHERE IN YOUR TERMINAL IN YOUR BROWSER IN REPL.IT YOU CANT RUN FROM VIM
+bindkey -v #Vim keybindings in terminal
 
 set autoexpand
-
-set TERM = "xterm-256color" #cOLORs
 
 unset red green yellow blue magenta cyan yellow white end
 
@@ -35,15 +33,7 @@ alias vpn 'sudo openvpn /etc/openvpn/ovpn_tcp/us966.nordvpn.com.tcp.ovpn' #Conne
 
 alias progress 'tail -f /var/log/emerge-fetch.log ' #Fetch progress on package installations
 
-alias no "yes 'n'" #the yes command repeats Y forever on those long scripts that require you to say yes to everything - this repeats N if you want to say no
-
-#Programming Shortcuts
-
-alias opencv 'sudo /usr/lib/jvm/icedtea-bin-8/bin/java -Djava.library.path=/home/jacoby/opencv/build/lib -javaagent:/opt/idea-community-2019.3.2/lib/idea_rt.jar=34563:/opt/idea-community-2019.3.2/bin -Dfile.encoding=UTF-8 -classpath /usr/lib/jvm/icedtea-bin-8/jre/lib/charsets.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/dnsns.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/jaccess.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/localedata.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/nashorn.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/sunec.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/ext/zipfs.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/jce.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/jsse.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/management-agent.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/resources.jar:/usr/lib/jvm/icedtea-bin-8/jre/lib/rt.jar:/root/IdeaProjects/OpenCV/out/production/OpenCV:/home/jacoby/opencv/build/bin/opencv-420.jar com.company.Main' #runs my opencv program; idk which of these arguments i need, but i dont feel like sorting through them - so i took them all
-
-alias opencompile 'sudo javac -classpath /home/jacoby/opencv/build/bin/opencv-420.jar /root/IdeaProjects/OpenCV/src/com/company/Main.java' #to compile the opencv program
-
-alias openedit 'sudo nvim /root/IdeaProjects/OpenCV/src/com/company/Main.java' # edit that same opencv program
+alias no "yes 'n'" #Repeats 'n' forever
 
 #File Navigation and Manipulation
 
@@ -58,26 +48,14 @@ alias tconf 'sudo nvim ~/.tcshrc' #Edit this file more quickly
 
 alias tsource 'source ~/.tcshrc'
 
-alias 777 'sudo chmod 777 ' #Give all perms to file
+alias 777 'sudo chmod 777 ' #Give all permissionss to file
 
 alias yeet 'sudo rm -r ' #Recursively delete a file (folders too)
 
 alias mkcd 'mkdir \!^; cd \!^1' #make a folder and cd into it
 
-#Chroots!!
-
-alias alpine 'sudo mount -v --rbind /dev /chroot/Alpine/dev && sudo chroot /chroot/Alpine' 
-
-alias kiss 'sudo mount -v --rbind /dev /chroot/Kiss/dev && sudo chroot /chroot/Kiss'
-
-alias void 'sudo mount -v --rbind /dev /chroot/Void/dev && sudo chroot /chroot/Void'
-
-#Fun Aliases
+#Misc.
 
 alias please 'sudo' #Nicer linux experience
 
-alias skurt 'exit' #exits (chroots and stuff)
-
 alias youtube-mp3 'youtube-dl --extract-audio --audio-format mp3' #Download youtube video as mp3
-
-
