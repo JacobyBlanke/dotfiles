@@ -1,3 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
-let g:netrw_dirhist_1='/etc/modprobe.d'
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/jacoby/GIU/src'
+let g:netrw_dirhist_6='/home/jacoby/GIU/build'
+let g:netrw_dirhist_5='/home/jacoby/gcc-6.5.0/INSTALL'
+let g:netrw_dirhist_4='/etc/portage/repos.conf'
+let g:netrw_dirhist_3='/mount/games/chroot'
+let g:netrw_dirhist_2='/etc/portage/package.use'
+let g:netrw_dirhist_1='/home/jacoby/Megasync/installer'
+let g:netrw_dirhist_0='/etc/env.d'
+let g:netrw_dirhist_9='/usr/share/cmake/Modules'
+let g:netrw_dirhist_8='/usr/share/cmake'

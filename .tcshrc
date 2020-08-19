@@ -1,8 +1,6 @@
 #Terminal Startup
-set wallpaper="`cat ~/Wallpaper/pick.txt`"
-wal -i $wallpaper #Use PyWal to get terminal theme based on wallpaper
-clear
-fortune | cowsay -f tux | lolcat # Fortune/cowsay with Tux the penguin in RAINBOW as a nice startup message
+
+setenv TERM "xterm-kitty"
 
 set     red="%{\033[1;31m%}"
 set   green="%{\033[0;32m%}"
@@ -13,29 +11,26 @@ set    cyan="%{\033[1;36m%}"
 set   white="%{\033[0;37m%}"
 set     end="%{\033[0m%}"
 
-set prompt = "${white}(${red}%n:%B%/%b${red}:${red}%t${white}) -${cyan} TCSH:${magenta} ${end}" //sets the shell prompt 
+set prompt = "${white}(${red}%n:%B%/%b${red}:${red}%t${white}) -${cyan} Not Fish:${magenta} ${end}"
 
-set path = ( $path ~/.local/bin/ ) #update path
-
-bindkey -v #Vim keybindings in terminal
+task list
+fortune | cowsay -f tux | lolcat # Fortune/cowsay with Tux the penguin in RAINBOW as a nice startup message
 
 set autoexpand
 
 unset red green yellow blue magenta cyan yellow white end
 
+set d=$HOME/.dircolors
+if ( -r $d ) eval `dircolors -c $d`
+
+
 #ALIASES
-
-#Network Aliases
-
-alias vpn 'sudo openvpn /etc/openvpn/ovpn_tcp/us966.nordvpn.com.tcp.ovpn' #Connect to my VPN
 
 #System Maintenance
 
-alias progress 'tail -f /var/log/emerge-fetch.log ' #Fetch progress on package installations
+alias portageProgress 'tail -f /var/log/emerge-fetch.log ' #Fetch progress on package installations
 
-alias no "yes 'n'" #Repeats 'n' forever
-
-#File Navigation and Manipulation
+alias no "yes 'n'" #the yes command repeats Y forever on those long scripts that require you to say yes to everything - this repeats N if you want to say no
 
 alias .. 'cd ..'
 alias ... 'cd ../..'
@@ -44,18 +39,28 @@ alias ..... 'cd ../../../..'
 
 alias cd 'cd \!:1; ls' #Automatically list files on directory change
 
-alias tconf 'sudo nvim ~/.tcshrc' #Edit this file more quickly
+alias tconf 'doas vim ~/.tcshrc' #Edit this file more quickly
 
 alias tsource 'source ~/.tcshrc'
 
-alias 777 'sudo chmod 777 ' #Give all permissionss to file
+alias 777 'doas chmod 777 ' #Give all perms to file
 
-alias yeet 'sudo rm -r ' #Recursively delete a file (folders too)
+alias mkcd 'mkdir \!^; cd \!^' #make a folder and cd into it
 
-alias mkcd 'mkdir \!^; cd \!^1' #make a folder and cd into it
-
-#Misc.
-
-alias please 'sudo' #Nicer linux experience
+alias please 'doas' 
 
 alias youtube-mp3 'youtube-dl --extract-audio --audio-format mp3' #Download youtube video as mp3
+
+alias ttpy 'mplayer -vo fbdev2 -vf scale=936:510 -geometry 960:-6 -quiet' #play video in tty
+
+alias ftp 'lftp'
+
+alias vup 'pactl set-sink-volume @DEFAULT_SINK@ +10%'
+
+alias vdown 'pactl set-sink-volume @DEFAULT_SINK@ -10%'
+
+alias bup 'brillo -A 5'
+
+alias bdown 'brillo -U 5'
+
+stty -ixon
