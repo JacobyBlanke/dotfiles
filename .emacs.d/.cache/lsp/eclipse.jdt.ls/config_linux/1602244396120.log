@@ -1,0 +1,357 @@
+!SESSION 2020-10-09 07:53:15.972 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_252
+java.vendor=IcedTea
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/jacoby/.emacs.d/workspace/
+
+!ENTRY org.eclipse.buildship.core 4 0 2020-10-09 07:53:16.398
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.buildship.core [12]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.850.v20200915-1336_JAVA15_PATCH"; singleton:="true"
+       org.eclipse.jdt.junit.core [45]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching; bundle-version="[3.13.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+              org.eclipse.jdt.launching [47]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+                     org.eclipse.jdt.debug [44]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2020-10-09 07:53:16.547
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.core.manipulation [43]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching; bundle-version="3.9.0"
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+       org.eclipse.jdt.launching [47]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+              org.eclipse.jdt.debug [44]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.debug 4 0 2020-10-09 07:53:16.548
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.debug [44]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.junit.core 4 0 2020-10-09 07:53:16.550
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.junit.core [45]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching; bundle-version="[3.13.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+       org.eclipse.jdt.launching [47]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+              org.eclipse.jdt.debug [44]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.launching 4 0 2020-10-09 07:53:16.552
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching [47]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+       org.eclipse.jdt.debug [44]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.m2e.jdt 4 0 2020-10-09 07:53:16.555
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.jdt [54]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+       org.eclipse.jdt.launching [47]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+              org.eclipse.jdt.debug [44]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.jboss.tools.maven.apt.core 4 0 2020-10-09 07:53:16.557
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.maven.apt.core [68]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.jdt; bundle-version="1.5.0"
+    -> Bundle-SymbolicName: org.eclipse.m2e.jdt; bundle-version="1.16.0.20200610-1500"; singleton:="true"
+       org.eclipse.m2e.jdt [54]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+              org.eclipse.jdt.launching [47]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+                     org.eclipse.jdt.debug [44]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2020-10-09 07:53:16.569
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.ls.core [48]
+  Unresolved requirement: Require-Bundle: org.eclipse.buildship.core; bundle-version="1.0.18"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.buildship.core; bundle-version="3.1.5.v20200806-2157-s"; singleton:="true"
+       org.eclipse.buildship.core [12]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.850.v20200915-1336_JAVA15_PATCH"; singleton:="true"
+              org.eclipse.jdt.junit.core [45]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching; bundle-version="[3.13.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+                     org.eclipse.jdt.launching [47]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+                            org.eclipse.jdt.debug [44]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.jdt; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.m2e.jdt; bundle-version="1.16.0.20200610-1500"; singleton:="true"
+       org.eclipse.m2e.jdt [54]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.osgi 4 0 2020-10-09 07:53:16.570
+!MESSAGE Bundle initial@reference:file:plugins/org.eclipse.jdt.ls.core_0.63.0.202010011520.jar was not resolved.
+
+!ENTRY org.eclipse.m2e.lifecyclemapping.defaults 2 0 2020-10-09 07:53:16.577
+!MESSAGE Could not resolve module: org.eclipse.m2e.lifecyclemapping.defaults [55]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.jdt; bundle-version="[1.16.0,1.17.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.jdt; bundle-version="1.16.0.20200610-1500"; singleton:="true"
+       org.eclipse.m2e.jdt [54]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+              org.eclipse.jdt.launching [47]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+                     org.eclipse.jdt.debug [44]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+
+!ENTRY org.eclipse.jdt.junit.core 2 0 2020-10-09 07:53:16.578
+!MESSAGE Could not resolve module: org.eclipse.jdt.junit.core [45]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching; bundle-version="[3.13.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+       org.eclipse.jdt.launching [47]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+              org.eclipse.jdt.debug [44]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+
+!ENTRY org.eclipse.m2e.jdt 2 0 2020-10-09 07:53:16.578
+!MESSAGE Could not resolve module: org.eclipse.m2e.jdt [54]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+       org.eclipse.jdt.launching [47]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+              org.eclipse.jdt.debug [44]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+
+!ENTRY org.jboss.tools.maven.apt.core 2 0 2020-10-09 07:53:16.578
+!MESSAGE Could not resolve module: org.jboss.tools.maven.apt.core [68]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.jdt; bundle-version="1.5.0"
+    -> Bundle-SymbolicName: org.eclipse.m2e.jdt; bundle-version="1.16.0.20200610-1500"; singleton:="true"
+       org.eclipse.m2e.jdt [54]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+              org.eclipse.jdt.launching [47]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+                     org.eclipse.jdt.debug [44]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+
+!ENTRY org.eclipse.buildship.core 2 0 2020-10-09 07:53:16.578
+!MESSAGE Could not resolve module: org.eclipse.buildship.core [12]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.850.v20200915-1336_JAVA15_PATCH"; singleton:="true"
+       org.eclipse.jdt.junit.core [45]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching; bundle-version="[3.13.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+              org.eclipse.jdt.launching [47]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+                     org.eclipse.jdt.debug [44]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+
+
+!ENTRY org.eclipse.jdt.core.manipulation 2 0 2020-10-09 07:53:16.579
+!MESSAGE Could not resolve module: org.eclipse.jdt.core.manipulation [43]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching; bundle-version="3.9.0"
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+       org.eclipse.jdt.launching [47]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+              org.eclipse.jdt.debug [44]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-10-09 07:53:16.579
+!MESSAGE Could not resolve module: org.eclipse.jdt.debug [44]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+
+!ENTRY org.eclipse.jdt.launching 2 0 2020-10-09 07:53:16.579
+!MESSAGE Could not resolve module: org.eclipse.jdt.launching [47]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+       org.eclipse.jdt.debug [44]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+
+!ENTRY org.eclipse.jdt.ls.core 2 0 2020-10-09 07:53:16.579
+!MESSAGE Could not resolve module: org.eclipse.jdt.ls.core [48]
+  Unresolved requirement: Require-Bundle: org.eclipse.buildship.core; bundle-version="1.0.18"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.buildship.core; bundle-version="3.1.5.v20200806-2157-s"; singleton:="true"
+       org.eclipse.buildship.core [12]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit.core
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit.core; bundle-version="3.10.850.v20200915-1336_JAVA15_PATCH"; singleton:="true"
+              org.eclipse.jdt.junit.core [45]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching; bundle-version="[3.13.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+                     org.eclipse.jdt.launching [47]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug; bundle-version="[3.11.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.debug; bundle-version="3.16.0.v20200828-0821"; singleton:="true"
+                            org.eclipse.jdt.debug [44]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+    -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.jdt; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.m2e.jdt; bundle-version="1.16.0.20200610-1500"; singleton:="true"
+       org.eclipse.m2e.jdt [54]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.launching
+           -> Bundle-SymbolicName: org.eclipse.jdt.launching; bundle-version="3.18.50.v20200916-1207_JAVA15_PATCH"; singleton:="true"
+
+
+!ENTRY org.eclipse.osgi 4 0 2020-10-09 07:53:16.579
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: Application "org.eclipse.jdt.ls.core.id1" could not be found in the registry. The applications available are: org.eclipse.ant.core.antRunner, org.eclipse.equinox.app.error, org.eclipse.jdt.apt.core.aptBuild, org.eclipse.jdt.core.JavaIndexer.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:252)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:33)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)

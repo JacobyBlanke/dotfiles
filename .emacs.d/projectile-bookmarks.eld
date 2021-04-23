@@ -1,0 +1,1 @@
+("~/" "~/MorningCoffee2/" "~/.emacs.d/elpa/pdf-tools-20200512.1524/build/server/" "~/.emacs.d/elpa/vterm-20201004.2057/")
