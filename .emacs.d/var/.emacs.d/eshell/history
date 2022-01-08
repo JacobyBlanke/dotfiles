@@ -1,0 +1,62 @@
+neofetch
+lsblk
+pfetch
+which pfetch
+vim /usr/bin/pfetch
+echo $TERM
+export
+export TERM=xterm
+echo $TERM
+pfetch
+neofetch
+export TERM=dumb
+echo $TERM
+pfetch
+ls
+cat ~/.config/pf
+ls
+rm mods.zip
+thunar
+rm -r yuzu/ you-can-datamosh-on-linux/
+rm HonorRollClasses.cpp
+ls
+rm Artifact.pdf
+cat eng
+cat ideas
+rm ideas
+neofetch
+fetch
+pfetch
+pfetchp
+printf '^[[?7l']]
+printf '^[[?7l'
+printf '^[[?7l'
+printf '^[[?7l'
+trap
+sh trap
+trap
+sh
+trap
+neofetch
+pfetch
+neofetch
+vim ~/.config/neofetch/config.conf
+neofetch
+neofetch --backend none
+neofetch --backend n
+neofetch --backend 
+neofetch --backend  --help
+                               CRUX, Debian, Gentoo, FreeBSD, Mac, NixOS, OpenBSD, android,
+neofetch --off
+jacoby@impostor clear
+clear
+clear
+neofetch --off
+vterm
+cmatrix
+cmatrix
+unimatrix
+vterm
+clear
+ls
+vterm

@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Jun 11 23:40:29 2021
+;; Desktop file format version 208
+;; Emacs version 27.2
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24772 11437 671069 355000) (desktop . "208") "jacoby@impostor" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#3b2685") (background-color . "#fafafa") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 71) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . fullboth) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . light) (cursor-color . "#04c4c7") (sticky) (environment) (last-focus-update . t) (tabs (current-tab (name . "*Calendar*") (explicit-name))) (frameset--id . "9117-156F-5CC2-5A7D") (frameset--mini t . t) (width . 237) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 47) (min-height-ignore . 5) (min-width-ignore . 12) (min-height-safe . 2) (min-width-safe . 6) (min-pixel-height . 120) (min-pixel-width . 376) (min-pixel-height-ignore . 75) (min-pixel-width-ignore . 96) (min-pixel-height-safe . 30) (min-pixel-width-safe . 48)) hc (pixel-width . 1916) (pixel-height . 1061) (total-width . 240) (total-height . 71) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 216) (pixel-height . 1061) (total-width . 27) (total-height . 71) (normal-height . 1.0) (normal-width . 0.11169102296450939) (parameters (window-side . left) (window-slot . 0)) (buffer " *NeoTree*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 nil nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1))) (hc (last . t) (pixel-width . 1700) (pixel-height . 1061) (total-width . 213) (total-height . 71) (normal-height . 1.0) (normal-width . 0.8883089770354906) (combination-limit) (vc (pixel-width . 1462) (pixel-height . 1061) (total-width . 183) (total-height . 71) (normal-height . 1.0) (normal-width . 0.8592548787699588) (combination-limit) (leaf (pixel-width . 1462) (pixel-height . 684) (total-width . 183) (total-height . 46) (normal-height . 0.644003777148253) (normal-width . 1.0) (buffer "*mu4e-headers*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 nil nil) (vscroll . 0) (dedicated) (point . 2835) (start . 1)) (prev-buffers ("*Calendar*" 1 525))) (leaf (last . t) (pixel-width . 1462) (pixel-height . 377) (total-width . 183) (total-height . 25) (normal-height . 0.3559962228517469) (normal-width . 1.0) (buffer "vterm" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 nil nil) (vscroll . 0) (dedicated) (point . 137) (start . 104)) (prev-buffers ("*Calendar*" 1 383)))) (vc (last . t) (pixel-width . 238) (pixel-height . 1061) (total-width . 30) (total-height . 71) (normal-height . 1.0) (normal-width . 0.1407451212300414) (combination-limit) (leaf (pixel-width . 238) (pixel-height . 145) (total-width . 30) (total-height . 10) (normal-height . 0.13957951906861524) (normal-width . 1.0) (buffer "*Calendar*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 nil nil) (vscroll . 0) (dedicated) (point . 252) (start . 1))) (leaf (last . t) (pixel-width . 238) (pixel-height . 916) (total-width . 30) (total-height . 61) (normal-height . 0.8604204809313848) (normal-width . 1.0) (buffer "notes" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 nil nil) (vscroll . 0) (dedicated) (point . 322) (start . 1)) (prev-buffers ("*Calendar*" 1 525)))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '(#("/home/jacoby/.emacs.d/" 0 22 (ivy-index 0)) #("/home/jacoby/notes" 0 18 (ivy-index 0)) "~/.emacs.d/init.el" "~/Honour-Roll-Deluxe/HonorRollDeluxe_1/HonorRollClasses.cpp" "~/Honour-Roll-Deluxe/HonorRollDeluxe_1/HonorRollClasses.h" "~/Honour-Roll-Deluxe/HonorRollDeluxe_1/EasyFile.cpp" "~/Minephenhydramine/src/main/java/jacoby/diphenhydraminecraft/statuseffects/tripping.java" "~/Minephenhydramine/src/main/java/jacoby/diphenhydraminecraft/items/benadryl.java" "~/Minephenhydramine/src/main/java/jacoby/diphenhydraminecraft/diphenhydraminecraft.java" "~/.config/neofetch/config.conf" "~/.newsrc-dribble" "~/Programming/impostorsay.c" "~/Operating Systems/qemu/win10/run.sh" "~/Desktop/Documents/12" "~/.pyicloud/rhejaejaricloudcom" "~/Desktop/Documents/Latex/MLATemplate.tex" "~/Desktop/Documents/Latex/NotesTemplate.pdf" "~/Desktop/Documents/Latex/NotesTemplate.tex" "~/Desktop/Documents/Latex/Math/NotesTemplate.toc" "~/Desktop/Documents/Latex/Math/temp.tex" "~/Programming/RandomJava/BrainF/Converter/Converter.java" "~/.lspf/plib/PUSER0A"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/jacoby/notes"
+  "notes"
+  'org-mode
+  '(auto-fill-mode visual-line-mode global-auto-revert-mode undo-tree-mode evil-commentary-mode override-global-mode ivy-mode counsel-mode projectile-mode diff-hl-flydiff-mode hes-mode org-indent-mode)
+  322
+  '(322 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24772 11315 44123 191000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (31 1 1 1 29 29 31 31 31 95))))
+
